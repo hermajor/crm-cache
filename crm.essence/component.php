@@ -8,7 +8,7 @@ if($this->startResultCache(false, array(($arParams["CACHE_GROUPS"]==="N"? false:
 	if(CModule::IncludeModule("iblock")) {
 
 	$arSelect = Array("IBLOCK_ID", "ID", "NAME");
-	$arFilter = Array("IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"], "ACTIVE" => "Y");
+	$arFilter = Array("IBLOCK_ID" => $arParams["IBLOCK_ID"], "ACTIVE" => "Y");
 	
 	$arResult = array();
 	$res = CIBlockElement::GetList(Array(), $arFilter, false, Array(), $arSelect);
