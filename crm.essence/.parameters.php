@@ -31,6 +31,13 @@ $arComponentParameters = array(
 			//"ADDITIONAL_VALUES" => "Y",//Дополнительные параметры для ввода вручную
 			"REFRESH" => "Y",
 		),
+		"CACHE_TIME" => array(
+			"PARENT" => "CACHE_SETTINGS",
+			"NAME" => "Cache Time",
+			"TYPE" => "STRING",
+			"MULTIPLE" => "N",
+			"DEFAULT" => 60*60*24,
+		),
 	),
 );
 ?>
