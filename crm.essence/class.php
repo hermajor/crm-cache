@@ -9,8 +9,8 @@ class CcrmEssence extends CBitrixComponent
 			if(CModule::IncludeModule("iblock"))
 			{
 				$this->arResult = $this->getCRMEssenses($this->arParams);
-				$this->endResultCache();
 			}
+			$this->endResultCache();
 		}
 		return $this->arResult;
     }
